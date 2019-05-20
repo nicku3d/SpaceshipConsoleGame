@@ -12,10 +12,10 @@ public abstract class Model{
     //V
     abstract void drawModel();
     boolean isAlive(){
-        if(health<0) return false;
+        if(health<=0) return false;
         else return true;
     }
-    Point getPosition(){
+    public Point getPosition(){
         return position;
     }
 }

@@ -11,7 +11,7 @@ public class Main {
 
     public static void main(String[] args) throws InterruptedException {
         //List<String> body = new ArrayList<String>();
-       /* String body = "  <_/\\_>";
+       /*String body = "  <_/\\_>";
         for(int i=0;i<5;i++) {
             System.out.println(i);
             System.out.println(body);
@@ -19,7 +19,10 @@ public class Main {
             TimeUnit.SECONDS.sleep(1);
             Main.clearScreen();
         }*/
-       Scene s= new Scene();
-       s.drawScene();
+        Scene s = new Scene();
+        s.drawScene();
+        //System.out.print("\033[H\033[2J");
+        //TimeUnit.SECONDS.sleep(1);
+        //s.drawScene();
     }
 }
